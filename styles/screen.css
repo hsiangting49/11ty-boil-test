@@ -4,6 +4,10 @@ body {
     background: #2D3142;
     padding: 0 40px;
     text-align: center;
+    margin: 0; /* Reset default margin */
+    padding-bottom: 100px; /* Add padding to the bottom to create space for the footer */
+    min-height: 100vh; /* Ensure body fills the viewport height */
+     position: relative; /* Ensure proper positioning */
 }
 
 nav {
@@ -45,6 +49,51 @@ h1 strong {
     -webkit-text-fill-color: transparent;
 }
 
+/* Add a specific style for the post-container */
+.post-container {
+    display: flex; /* Use flexbox to arrange children in a row */
+    justify-content: space-between; /* Distribute space evenly between children */
+    /* Add any other styles as needed */
+  }
+  
+  /* Add a specific style for each post */
+  .post {
+    /* Your custom styles for each post */
+    width: 48%; /* Set the width to fit two posts in a row with some spacing */
+    /* Add any other styles as needed */
+  }
+  
+  /* Add a specific style for h2 elements within the post */
+  .post h2 {
+    /* Your custom styles for h2 within each post */
+    color: #ffffff; /* White text color */
+    font-size: 1.5em; /* Smaller font size */
+    /* Add any other styles as needed */
+  }
+
+ /* Style the paragraph with a maximum of four lines */
+p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px; /* Add space after the truncated paragraph */
+  }
+  
+  /* Style the "Read More" link */
+  a.read-more {
+    color: #4CAF50; /* Green color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add a smooth transition effect for color changes */
+  }
+  
+  /* Change the color of the "Read More" link after being clicked */
+  a.read-more:visited {
+    color: #ffffff; /* White color after click */
+  }
+
 img.about {
     opacity: 0.5;
 }
+
